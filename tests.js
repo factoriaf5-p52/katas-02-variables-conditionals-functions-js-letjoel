@@ -5,7 +5,11 @@ describe("Variables en JS", () => {
     it("Completa todas las constantes que faltan", () => {
 
         const a = 10;
-
+        const b = 1.34;
+        const c = true;
+        const d = "Buenos días";
+        const e = "Pepe";
+        const f = "Buenos días, pepe";
         expect(a).to.equal(10);
         expect(b).to.equal(1.34);
         expect(c).to.equal(true);
@@ -17,19 +21,31 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que las operaciones resulten correctamente", () => {
 
         let a = 11;
-
+        let b = 0.34;
+        let c = 10;
+        let d = 0;
+        let e = 340;
         expect(a + b).to.equal(11.34);
         expect(a * c).to.equal(110);
         expect(d - e).to.equal(-340);
         // investiga para qué sirven los operadores ** y %
-        expect(f ** g).to.equal(1000);
-        expect(x % 2).to.equal(0);
+
+        let f = 10;
+        let g = 3;
+        let  x = 4; //parell
+        let y = 3; //senar
+        expect(f ** g).to.equal(1000); //exponente
+        expect(x % 2).to.equal(0); // modulo
         expect(y % 2).to.equal(1);
     })
 
     it("Completa todas las variables que faltan para que se cumplan las condiciones", () => {
 
         let a = 10;
+        let b = 100;
+        let c;
+        let d = "Hola";
+        let n = "Buenas";
 
         expect(a > 9).to.be.true;
         expect(a < 11).to.be.true;
@@ -43,13 +59,13 @@ describe("Variables en JS", () => {
 describe("condicionales en javascript", () => {
     it("completa el valor del resultado esperado (expected)", () => {
 
-        let name = "Pepe";
+        let name = "Pepito";
 
         let result = "KO";
 
         // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length
         if (name.length === 6) {
-            result = "OK"
+            result = "???"
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
